@@ -1,0 +1,6 @@
+# doc
+
+# src
+[submodule "src/pyldpc"]
+	path = src/pyldpc
+	url = https://github.com/c-w-m/pyldpc.git

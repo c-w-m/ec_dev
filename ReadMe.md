@@ -27,15 +27,14 @@ $ git submodule add
 # projects
 $ cd src
 $ git submodule add https://github.com/c-w-m/pyldpc.git
-
+$ git submodule add https://github.com/c-w-m/ldpc-decoders.git
 ```
 #### Removing Submodules
 ```shell
 # Remove the submodule entry from .git/config
 git submodule deinit -f path/to/submodule
 
-# Remove the submodule directory from the super-project's .git/modules 
-directory
+# Remove the submodule directory from the super-project's .git/modules directory
 rm -rf .git/modules/path/to/submodule
 
 # Remove the entry in .gitmodules and remove the submodule directory located at path/to/submodule
@@ -45,8 +44,8 @@ git rm -f path/to/submodule
 ### Jupyter Lab
 #### Add a Kernel
 ```shell
-$ source .tox/snorkel37/bin/activate
-(ec37) $ python -m ipykernel install --user --name=snorkel37
+$ source .tox/ec37/bin/activate
+(ec37) $ python -m ipykernel install --user --name=ec37
 ```
 
 #### List All Kernels

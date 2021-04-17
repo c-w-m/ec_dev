@@ -17,6 +17,19 @@ Remember to use the `recursive` clone to get all the submodules.
 $ git clone --recurse-submodules https://github.com/c-w-m/ec_dev.git
 ```
 
+### Python
+Using __PyCharm IDE__, create a new Python virtual environment:
+
+* File | Settings | Project: ec_dev | 
+* Project: ec_dev | Python Interpreter | click on Python Interpreter icon (upper right - wheel)
+* Virtualenv Environment | New environment
+* Location: /ec_dev/.venv
+* Base interpreter: Python 3.9
+
+Returning to the list of Packages, add the following: `tox` and `Jupyterlab`
+
+Rename the interpreter to __ec_dev39__ and make sure it is selected
+
 ### Submodules
 ```shell
 # The following submodules were added:
